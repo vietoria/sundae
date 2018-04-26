@@ -8,29 +8,28 @@ function preload() {
   nut = loadImage ('assets/chocolate.png');
 }
 
-// to keep track of the game state
 const STATE = {
   score: 0, 
 }
 
-// const RESOURCES = {
+const RESOURCES = {
 
-// };
+};
 
-// const IMAGES = {
+const IMAGES = {
+  nut: 'assets/chocolate.png',
+};
 
-// };
-
-// const GRID_ROWS = 0;
-// const GRID_COLS = 0;
-// const GRID_CELL_SIZE = 0;
-// const GRID_EMPTY = [205, 244, 222];
+const GRID_ROWS = 0;
+const GRID_COLS = 0;
+const GRID_CELL_SIZE = 0;
+const GRID_EMPTY = [205, 244, 222];
 
 // runs once at start
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 
-  showModal ('text,' 'texts', [new Button ('start,')])
+  showModal ('text', 'texts', [new Button ('start')]);
 
   trash2 = new Trash(50, 220, 1, 380, 0, 0);
   trash3 = new Trash(100, 180, 1, 375, 0, 0);
@@ -413,10 +412,9 @@ class Nut {
     this.collect = false;
   }
 
-  get image() {
-    return 'gO8JE5C.png'
-  }
-
+  // get image() {
+  //   return 'gO8JE5C.png'
+  // }
 
   draw() {
     // important that rectMode is CENTER!
@@ -431,10 +429,10 @@ class Nut {
   }
 }
 
-// function init () {
+function init () {
 
-// }
+}
 
-// function main() {
+function main() {
 
-// }
+}
