@@ -1,59 +1,140 @@
 // runs before everything
 // use to load assets
 var hand;
-var trash2;
-var pause = false;
-//var clicked;
+var nut;
+var collect = false;
 
 function preload() {
-  duck = loadImage('assets/duck.png');
-  meme = loadImage('http://78.media.tumblr.com/abc33130bc6f89e95576798505e998a5/tumblr_ovea2qiDJ71vkgyt6o1_540.jpg');
-
+  nut = loadImage ('assets/chocolate.png');
 }
+
+// to keep track of the game state
+const STATE = {
+  score: 0, 
+}
+
+// const RESOURCES = {
+
+// };
+
+// const IMAGES = {
+
+// };
+
+// const GRID_ROWS = 0;
+// const GRID_COLS = 0;
+// const GRID_CELL_SIZE = 0;
+// const GRID_EMPTY = [205, 244, 222];
 
 // runs once at start
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 
-  
+  showModal ('text,' 'texts', [new Button ('start,')])
 
-  trash2 = new Trash(0, 350, 40, 40, 7, 0);
-  trash3 = new Trash(0, 400, 40, 40, 7, 0);
-  trash4 = new Trash(0, 460, 40, 40, 6, 0);
-  trash5 = new Trash(0, 550, 40, 40, 5, 0);
-  trash6 = new Trash(0, 430, 40, 40, 4, 0);
-  trash7 = new Trash(0, 490, 40, 40, 4, 0);
-  trash8 = new Trash(0, 620, 40, 40, 5, 0);
-  trash9 = new Trash(0, 720, 40, 40, 7, 0);
-  trash10 = new Trash(0, 620, 40, 40, 3, 0);
-  trash11 = new Trash(0, 720, 40, 40, 3, 0);
-  trash12 = new Trash(0, 520, 40, 40, 3, 0);
-  trash13 = new Trash(0, 290, 40, 40, 3, 0);
-  trash14 = new Trash(0, 430, 40, 40, 3, 0);
-  trash15 = new Trash(0, 760, 40, 40, 3, 0);
-  trash16 = new Trash(0, 490, 40, 40, 3, 0);
-  trash17 = new Trash(0, 240, 40, 40, 3, 0);
-  trash18 = new Trash(0, 500, 40, 40, 4, 0);
-  trash19 = new Trash(0, 600, 40, 40, 4, 0);
-  trash20 = new Trash(0, 700, 40, 40, 4, 0);
-  trash21 = new Trash(0, 550, 40, 40, 4, 0);
-  trash22 = new Trash(0, 620, 40, 40, 4, 0);
+  trash2 = new Trash(50, 220, 1, 380, 0, 0);
+  trash3 = new Trash(100, 180, 1, 375, 0, 0);
+  trash4 = new Trash(150, 220, 1, 380, 0, 0);
+  trash5 = new Trash(200, 180, 1, 375, 0, 0);
+  trash6 = new Trash(250, 220, 1, 380, 0, 0);
+  trash7 = new Trash(300, 180, 1, 375, 0, 0);
+  trash8 = new Trash(350, 220, 1, 380, 0, 0);
+  trash9 = new Trash(400, 180, 1, 375, 0, 0);
+  trash10 = new Trash(450, 220, 1, 380, 0, 0);
+  trash11 = new Trash(500, 180, 1, 375, 0, 0);
+  trash12 = new Trash(550, 220, 1, 380, 0, 0);
+  trash13 = new Trash(600, 180, 1, 375, 0, 0);
+  trash14 = new Trash(650, 220, 1, 380, 0, 0);
+  trash15 = new Trash(700, 180, 1, 375, 0, 0);
+  trash16 = new Trash(750, 220, 1, 380, 0, 0);
+  trash17 = new Trash(800, 180, 1, 375, 0, 0);
+  trash18= new Trash(850, 220, 1, 380, 0, 0);
+  trash19 = new Trash(900, 180, 1, 375, 0, 0);
+  trash20 = new Trash(950, 220, 1, 380, 0, 0);
+  trash21 = new Trash(1000, 180, 1, 375, 0, 0);
+  trash22 = new Trash(1050, 220, 1, 380, 0, 0);
+  trash23 = new Trash(1100, 180, 1, 375, 0, 0);
+  trash24 = new Trash(1150, 220, 1, 380, 0, 0);
+  trash25 = new Trash(1200, 180, 1, 375, 0, 0);
+  trash26 = new Trash(1250, 220, 1, 380, 0, 0);
+  trash27 = new Trash(1300, 180, 1, 375, 0, 0);
+  trash28 = new Trash(1350, 220, 1, 380, 0, 0);
+  trash30 = new Trash(1450, 220, 1, 380, 0, 0);
+  trash31 = new Trash(350, 410, 600, 1, 0, 0);
+  trash32 = new Trash(1050, 410, 600, 1, 0, 0);
 
+  trash42 = new Trash(50, 570, 1, 240, 0, 0);
+  trash43 = new Trash(100, 640, 1, 275, 0, 0);
+  trash44 = new Trash(150, 570, 1, 240, 0, 0);
+  trash45 = new Trash(200, 680, 1, 375, 0, 0);
+  trash46 = new Trash(250, 570, 1, 240, 0, 0);
+  trash47 = new Trash(300, 680, 1, 375, 0, 0);
+  trash48 = new Trash(350, 570, 1, 240, 0, 0);
+  trash49 = new Trash(400, 680, 1, 375, 0, 0);
+  trash50 = new Trash(450, 570, 1, 240, 0, 0);
+  trash51 = new Trash(500, 680, 1, 375, 0, 0);
+  trash52 = new Trash(550, 570, 1, 240, 0, 0);
+  trash53 = new Trash(600, 680, 1, 375, 0, 0);
+  trash54 = new Trash(650, 570, 1, 240, 0, 0);
+  trash55 = new Trash(700, 680, 1, 375, 0, 0);
+  trash56 = new Trash(750, 570, 1, 240, 0, 0);
+  trash57 = new Trash(800, 680, 1, 375, 0, 0);
+  trash58 = new Trash(850, 570, 1, 240, 0, 0);
+  trash59 = new Trash(900, 680, 1, 375, 0, 0);
+  trash60 = new Trash(950, 570, 1, 240, 0, 0);
+  trash61 = new Trash(1000, 680, 1, 375, 0, 0);
+  trash62 = new Trash(1050, 570, 1, 240, 0, 0);
+  trash63 = new Trash(1100, 680, 1, 375, 0, 0);
+  trash64 = new Trash(1150, 570, 1, 240, 0, 0);
+  trash65 = new Trash(1200, 680, 1, 375, 0, 0);
+  trash66 = new Trash(1250, 570, 1, 240, 0, 0);
+  trash67 = new Trash(1300, 680, 1, 375, 0, 0);
+  trash68 = new Trash(1350, 570, 1, 240, 0, 0);
+  trash70 = new Trash(1450, 570, 1, 240, 0, 0);
+  trash71 = new Trash(350, 450, 600, 1, 0, 0);
+  trash72 = new Trash(1050, 450, 600, 1, 0, 0);
 
-  hand = new Hand(900, 700, 10, 10, 1, 0);
+  hand = new Hand(900, 700, 30, 30, 0, 0);
+
+  nut1 = new Nut(175, 200, 20, 20, 0, 0);
+  nut2 = new Nut(275, 500, 20, 20, 0, 0);
+  nut3 = new Nut(375, 300, 20, 20, 0, 0);
+  nut4 = new Nut(475, 100, 20, 20, 0, 0);
+  nut5 = new Nut(575, 600, 20, 20, 0, 0);
+  nut6 = new Nut(975, 700, 20, 20, 0, 0);
+  nut7 = new Nut(1275, 600, 20, 20, 0, 0);
+  nut8 = new Nut(875, 300, 20, 20, 0, 0);
+  nut9 = new Nut(975, 350, 20, 20, 0, 0);
+  nut10 = new Nut(1075, 200, 20, 20, 0, 0);
+ 
+
   //clicked = false;
 
 }
 
+
 // runs every frame
 function draw() {
-  background(62, 124, 121);
+  background(75, 158, 114);
 
   hand.x = mouseX;
   hand.y = mouseY;
   imageMode(CENTER);
 
   hand.draw();
+
+  nut1.draw();
+  nut2.draw();
+  nut3.draw();
+  nut4.draw();
+  nut5.draw();
+  nut6.draw();
+  nut7.draw();
+  nut8.draw();
+  nut9.draw();
+  nut10.draw();
+
+
   trash2.draw();
   trash3.draw();
   trash4.draw();
@@ -75,114 +156,199 @@ function draw() {
   trash20.draw();
   trash21.draw();
   trash22.draw();
+  trash23.draw();
+  trash24.draw();
+  trash25.draw();
+  trash26.draw();
+  trash27.draw();
+  trash28.draw();
+  trash30.draw();
+  trash31.draw();
+  trash32.draw();
 
-  if (!pause) {
-    trash2.move();
-    trash3.move();
-    trash4.move();
-    trash5.move();
-    trash6.move();
-    trash7.move();
-    trash8.move();
-    trash9.move();
-    trash10.move();
-    trash11.move();
-    trash12.move();
-    trash13.move();
-    trash14.move();
-    trash15.move();
-    trash16.move();
-    trash17.move();
-    trash18.move();
-    trash19.move();
-    trash20.move();
-    trash21.move();
-  }
+  trash42.draw();
+  trash43.draw();
+  trash44.draw();
+  trash45.draw();
+  trash46.draw();
+  trash47.draw();
+  trash48.draw();
+  trash49.draw();
+  trash50.draw();
+  trash51.draw();
+  trash52.draw();
+  trash53.draw();
+  trash54.draw();
+  trash55.draw();
+  trash56.draw();
+  trash57.draw();
+  trash58.draw();
+  trash59.draw();
+  trash60.draw();
+  trash61.draw();
+  trash62.draw();
+  trash63.draw();
+  trash64.draw();
+  trash65.draw();
+  trash66.draw();
+  trash67.draw();
+  trash68.draw();
+  trash70.draw();
+  trash71.draw();
+  trash72.draw();
 
-  if (hand.collided(trash2)) {
-    trash2.deleted = true;
-  }
+  
+// SCORE ! ! !
+  textSize(14);
+  fill(255,255,255);
+  text(`${STATE.score} 🍫 COLLECTED`, 650, 435);
 
-  if (hand.collided(trash3)) {
-    trash3.deleted = true;
-  }
+
+  // if (hand.collided(trash2)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash3)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
  
-  if (hand.collided(trash4)) {
-    trash4.deleted = true;
+  // if (hand.collided(trash4)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+
+  // }
+
+  // if (hand.collided(trash5)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash6)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash7)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash8)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash9)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash10)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash11)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash12)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash13)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash14)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash15)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash16)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash17)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash18)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash19)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash20)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash21)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  // if (hand.collided(trash22)) {
+  //   return showModal('TITLE', 'DESCRIPTION');
+  // }
+
+  if (hand.collided(nut1) && !nut1.deleted) {
+    STATE.score += 1;
+    nut1.deleted = true;
   }
 
-  if (hand.collided(trash5)) {
-    trash5.deleted = true;
+  if (hand.collided(nut2) && !nut2.deleted) {
+    STATE.score += 1;
+    nut2.deleted = true;
   }
 
-  if (hand.collided(trash6)) {
-    trash6.deleted = true;
+  if (hand.collided(nut3) && !nut3.deleted) {
+    STATE.score += 1;
+    nut3.deleted = true;
   }
 
-  if (hand.collided(trash7)) {
-    trash7.deleted = true;
+  if (hand.collided(nut4) && !nut4.deleted) {
+    STATE.score += 1;
+    nut4.deleted = true;
   }
 
-  if (hand.collided(trash8)) {
-    trash8.deleted = true;
+  if (hand.collided(nut5) && !nut5.deleted) {
+    STATE.score += 1;
+    nut5.deleted = true;
   }
 
-  if (hand.collided(trash9)) {
-    trash9.deleted = true;
+  if (hand.collided(nut6) && !nut6.deleted) {
+    STATE.score += 1;
+    nut6.deleted = true;
   }
 
-  if (hand.collided(trash10)) {
-    trash10.deleted = true;
+  if (hand.collided(nut7) && !nut7.deleted) {
+    STATE.score += 1;
+    nut7.deleted = true;
   }
 
-  if (hand.collided(trash11)) {
-    trash11.deleted = true;
+  if (hand.collided(nut8) && !nut8.deleted) {
+    STATE.score += 1;
+    nut8.deleted = true;
   }
 
-  if (hand.collided(trash12)) {
-    trash12.deleted = true;
+  if (hand.collided(nut9) && !nut9.deleted) {
+    STATE.score += 1;
+    nut9.deleted = true;
   }
 
-  if (hand.collided(trash13)) {
-    trash13.deleted = true;
+  if (hand.collided(nut10) && !nut10.deleted) {
+    STATE.score += 1;
+    nut10.deleted = true;
   }
 
-  if (hand.collided(trash14)) {
-    trash14.deleted = true;
-  }
-
-  if (hand.collided(trash15)) {
-    trash15.deleted = true;
-  }
-
-  if (hand.collided(trash16)) {
-    trash16.deleted = true;
-  }
-
-  if (hand.collided(trash17)) {
-    trash17.deleted = true;
-  }
-
-  if (hand.collided(trash18)) {
-    trash18.deleted = true;
-  }
-
-  if (hand.collided(trash19)) {
-    trash19.deleted = true;
-  }
-
-  if (hand.collided(trash20)) {
-    trash20.deleted = true;
-  }
-
-  if (hand.collided(trash21)) {
-    trash21.deleted = true;
-  }
-
-  if (hand.collided(trash22)) {
-    trash22.deleted = true;
+  if (STATE.sccore > 9) {
+    //SHOW END SCREEN
+    //return showModal('TITLE', 'DESCRIPTION');
+    textSize(54);
+    fill(255,255,255);
+    text('YAY UR DONE', 650, 435);
   }
 }
+
+
 
 // collisions are slightly different for rectangles
 class Trash {
@@ -203,17 +369,6 @@ class Trash {
     rect(this.x, this.y, this.w, this.h);
     }
   }
-
-  move() {
-    this.x += this.velocity_x;
-    this.y += this.velocity_y;
-  }
-
-  // collided(otherTrash) {
-  //   var d_x = Math.abs(this.x - otherTrash.x);
-  //   var d_y = Math.abs(this.y - otherTrash.y);
-  //   return d_x <= (this.w/2 + otherTrash.w/2) && d_y <= (this.h/2 + otherTrash.h/2);
-  // }
 
 }
 
@@ -246,3 +401,40 @@ constructor(x, y, w, h, velocity_x, velocity_y) {
   }
 
 }
+
+class Nut {
+  constructor(x, y, w, h, velocity_x, velocity_y) {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.velocity_x = velocity_x;
+    this.velocity_y = velocity_y;
+    this.collect = false;
+  }
+
+  get image() {
+    return 'gO8JE5C.png'
+  }
+
+
+  draw() {
+    // important that rectMode is CENTER!
+    if (this.collect) {
+    STATE.score += 1;
+    }
+
+    if (!this.deleted) {
+    rectMode(CENTER);
+    rect(this.x, this.y, this.w, this.h);
+    }
+  }
+}
+
+// function init () {
+
+// }
+
+// function main() {
+
+// }
