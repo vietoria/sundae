@@ -3,9 +3,10 @@
 var hand;
 var nut;
 var collect = false;
+var ModalShow = false;
 
 function preload() {
-  nut = loadImage ('assets/chocolate.png');
+  //nut = loadImage ('assets/chocolate.png');
 }
 
 const STATE = {
@@ -17,13 +18,25 @@ const RESOURCES = {
 };
 
 const IMAGES = {
-  nut: 'assets/chocolate.png',
+  //nut: 'assets/chocolate.png',
 };
 
 const GRID_ROWS = 0;
 const GRID_COLS = 0;
 const GRID_CELL_SIZE = 0;
 const GRID_EMPTY = [205, 244, 222];
+
+
+function main() {
+  //showModal('WELCOME', 'test text', 'Okay');
+  if (STATE.score > 9 && !ModalShow) {
+    ModalShow = true;
+    return showModal('WINNER', 'YAY YOU HAVE ENOUGH CHOCOLATE!',
+      [ new Button('CONTINUE', function() {
+        location.href = "../subgame1/index.html"})]
+        );
+  }
+}
 
 // runs once at start
 function setup() {
@@ -338,7 +351,7 @@ function draw() {
     nut10.deleted = true;
   }
 
-  if (STATE.sccore > 9) {
+  if (STATE.score > 9) {
     //SHOW END SCREEN
     //return showModal('TITLE', 'DESCRIPTION');
     textSize(54);
@@ -429,10 +442,7 @@ class Nut {
   }
 }
 
-function init () {
-
+function init() {
+  showModal('MWAHAHAHAHA', 'COLLECT CHOCOLATE!!!');
 }
 
-function main() {
-
-}

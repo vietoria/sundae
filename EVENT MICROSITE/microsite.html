@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WAIRHAUS</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="animate.css-master/animate.min.css">
+
+
+<script src="WOW-master/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+<script src="scrollup-master/dist/lib/jquery-1.11.1.min.js"></script>
+<script src="scrollup-master/dist/jquery.scrollUp.min.js"></script>
+
+<script>
+    $(function () {
+    $.scrollUp({
+        scrollName: 'scrollUp',      // Element ID
+        scrollDistance: 1000,         // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top',           // 'top' or 'bottom'
+        scrollSpeed: 300,            // Speed back to top (ms)
+        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+        animation: 'fade',           // Fade, slide, none
+        animationSpeed: 200,         // Animation speed (ms)
+        scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+        scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+        scrollText: true,            // Text for element, can contain HTML
+        scrollTitle: false,          // Set a custom <a> title if required.
+        scrollImg: false,            // Set true to use image
+        activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647           // Z-Index for the overlay
+    });
+});
+</script>
+
+<style> 
+
+
+body, html, * {
+    padding: 0px;
+    margin: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #ffd800;
+}
+
+b {
+    text-transform: uppercase;
+    color: #000;
+}
+
+#scrollUp {
+    position: fixed;
+    padding: 100px;
+    top: 600px;
+    left: 1300px;
+    color: #ffd800;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 8px; 
+}
+
+
+.hollowtexts { 
+    height: 400px;
+    width: 400px; 
+    padding: 50px; 
+    text-align: justify; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 12px; 
+    color: #ccc; 
+    line-height: 200%; 
+    font-weight: normal; 
+    text-transform: lowercase; }
+
+.introduction { 
+    width: 500px; 
+    padding: 50px; 
+    margin-top: 200px;
+    text-align: justify; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 12px; 
+    color: #ccc; 
+    line-height: 200%; 
+    font-weight: normal; 
+    text-transform: lowercase; }
+
+
+.hollowtexts2 { 
+    height: 400px;
+    width: 400px; 
+    padding: 50px; 
+    text-align: justify; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 12px; 
+    color: #ccc; 
+    line-height: 200%; 
+    font-weight: normal; 
+    text-transform: lowercase; }
+
+.header {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 900; 
+    font-size: 60px; 
+    color:#000; 
+    position: relative; 
+    left: 140px; 
+    top:140px; 
+    z-index:60;  
+    letter-spacing: 15px;
+}
+
+.welcome {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 9px; 
+    color:#000; 
+    position: relative; 
+    left: 140px; 
+    top:250px; 
+    z-index:60;  
+    letter-spacing: 5px;  
+    text-transform: none;
+}
+
+.pullquote {
+    font-family:  Old Standard TT, Playfair Display; 
+    font-weight: 400; 
+    font-size: 12px; 
+    color:#fff; 
+    position: relative; 
+    left: 230px; 
+    top:430px; 
+    z-index:40;  
+    font-style: none; 
+    letter-spacing: 2px; 
+    width:560px; 
+    text-transform: none;  
+    text-align: left; 
+    line-height: 250%; 
+}
+
+.quoted {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    text-align: right; 
+    font-size: 9px; 
+    color:#fff; 
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.lastflower {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 30px; color:#ffd800; position: 
+    relative; margin-top: 20px;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.lastflower:hover {
+    -webkit-transform: rotate(420deg);
+}
+
+
+.rsvp {
+    margin-top: 800px; margin-left: 500px;
+}
+
+.submitbox {
+    text-align: center; width: 50px; margin-left: 245px; margin-top: 20px; padding: 3px; background-color: #ffd800;
+}
+
+
+.firstlink {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 30px; 
+    color:#ffd800; 
+    position: relative; 
+    top:200px;
+    width: 100%; 
+    text-align: center; 
+    -webkit-transition: all .5s ease-in-out; /* transitions make any changes to the element happen over time */
+}
+
+.firstlink:hover {
+    -webkit-transform: rotate(720deg);
+}
+
+.linkone {
+    -webkit-transition: all .5s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 30px; color:#ffd800; 
+    position: relative; 
+    top: 50px;
+    padding-right: 50px; 
+}
+
+
+.linktwo {
+    -webkit-transition: all .5s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 30px; color:#ffd800; 
+    position: relative; 
+    top: 50px; 
+    padding-right: 50px; 
+}
+
+
+.linkthree {
+    -webkit-transition: all .5s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 30px; color:#ffd800; 
+    position: relative; 
+    top: 50px; 
+    padding-right: 50px; 
+}
+
+
+.linkfour {
+    -webkit-transition: all .5s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 30px; color:#ffd800; 
+    position: relative; 
+    top: 50px; 
+    padding-right: 50px; 
+}
+
+.headliner {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 15px; 
+    color:#ffd800; 
+    padding: 60px;
+    top: 0px;
+    position: relative; 
+    left: 90px; 
+    letter-spacing: 5px;  
+    text-transform: none;
+}
+
+
+.hollowsidebar { 
+    width: 300px; 
+    padding: 10px; 
+    background-color: #fff; 
+    margin-left: -280px;
+    }
+
+.hollowsub { 
+    width: 300px; 
+    text-transform: uppercase; 
+    font:bold 30px Arial; 
+    color:#ffd800; 
+    letter-spacing:2px; 
+    text-align: right; 
+    margin-left: 10px; 
+    line-height: 200%; }
+
+
+.sugamood { 
+    width: 72%; margin-top: 50px; font-family:  Playfair Display; 
+    font-weight: 700; font-size: 9px; color:#fff; 
+    text-align: center; letter-spacing: 5px;  
+    text-transform: uppercase; }
+
+
+.price { 
+    width: 325px; height: 40px; font-family:  'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 9px; color:#000; 
+    text-align: center; letter-spacing: 5px;  
+    text-transform: uppercase; }
+
+
+.price2 { 
+    width: 325px; height: 40px; font-family:  'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 9px; color:#000; 
+    text-align: center; letter-spacing: 5px;  
+    text-transform: uppercase; margin-bottom: 5px; }
+
+.sugagif1 { 
+    width: 325px; height: 525px; background-color: #000; padding: 5px; border: 1px solid #ccc; }
+
+.sugagif2 { 
+    width: 325px; height: 525px; background-color: #000; margin-top: 15px; margin-bottom: 15px; padding: 5px; border: 1px solid #ccc; }
+
+.sugagif3 { 
+    width: 325px; height: 525px; background-color: #000; padding: 5px; border: 1px solid #ccc; }
+
+
+
+.lasterflower {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 30px; color:#ffd800; position: 
+    relative; top: 100px;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.lasterflower:hover {
+    -webkit-transform: rotate(420deg);
+}
+
+</style>
+    
+</head>
+<body>
+
+
+<div class="header"><div class="animated fadeInDown">CAN YOU MAKE A SUNDAE?</div></div><p> 
+
+<div class="wow fadeInDown" data-wow-delay="2s"><center><div class="introduction">Wairhaus represents the intersection of urban development and social engagement. Our premier location features a repurposed warehouse nestled in the heart of Kakaako's industrial block. It's purpose is to serve as an open space for those who wish to protest the underdeveloped surrounding via thunderous live performances, professionally choreographed marching, supporting multinational corporate vendors via merchandise consumption, and much more. As the largest urban development site in Honolulu, Kakaako represents a once-in-a lifetime opportunity to transform an older urban core into a much needed and sought after gathering place for all who can afford it.</div></center></div>
+
+ <div class="wow fadeInDown" data-wow-delay="4s"><center><a href="#one"><div class="linkone">FIRST</div></a><a href="#two"><div class="linktwo">SECOND</div></a> <a href="#three"><div class="linkthree">THIRD</div></a> <a href="#four"><div class="linkfour">FOURTH</div></a></center></div>
+
+<div style="height: 1000px;"></div>
+<div id="one"></div>
+<div class="wow fadeInDown" data-wow-delay="2s">
+<div class="headliner">ABOUT US</div><p></div>
+
+<center><div class="wow fadeInDown" data-wow-delay=".8s"><table cellpadding="0" cellspacing="0">
+<td>
+  <div class="hollowtexts">Wairhaus represents the intersection of urban development and social engagement. Our premier location features a repurposed warehouse nestled in the heart of Kakaako's industrial block. It's purpose is to serve as an open space for those who wish to protest the underdeveloped surrounding via thunderous live performances, professionally choreographed marching, supporting multinational corporate vendors via merchandise consumption, and much more. As the largest urban development site in Honolulu, Kakaako represents a once-in-a lifetime opportunity to transform an older urban core into a much needed and sought after gathering place for all who can afford it. Surrounded by over 4,000 new homes in a market whose supply continues to fall short of demand, and over one million square feet of retail space, making Kakaako the premier outdoor shopping district in Hawai'i and a truly exceptional destination for locals and visitors, there is still much work to be done and we need your help.</div>
+</td>
+<td>
+  <div class="hollowtexts2">STARTING AT <b>12AM, NOVEMBER 8TH, 2017</b> at <b>WAIRHAUS</b> located on <b>111 Coral Street Honolulu, HI 10666</b>, please join us in our protest against poverty as we endeavor to renovate local culture and history as foundations for creating a more extraordinary community. your participation will only cost a small fee of <b>$200 USD</b>. those who chose to offer a generous donation of over $500 USD will automatically be entered in a raffle with the chance to win a weekend staycation in one of Kakaako's newly completed luxury condos with a gorgeous view of all the other newly completed high rises. demonstration posters to be used at the event can be bought at our wairhaus storefront, and each purchase will count as one entry into a seperate raffle with a surprise prize! all procedes will be donated to the local police force's program to exterminate the homeless community infesting the area's many parks and common spaces. with your help, we can truly make a difference for our community.</div>
+</td>
+
+</table></div>
+
+<br><div class="wow fadeInDown" data-wow-delay="3s"><a href="#two"><div class="lastflower">❀</div></a></div></div>
+</center>
+
+
+<div style="height: 1000px;"></div>
+<div id="two"></div>
+<div class="wow fadeInDown" data-wow-delay="2s">
+<div class="headliner">ABOUT US</div><p></div>
+
+<center><div class="wow fadeInDown" data-wow-delay=".8s"><table cellpadding="0" cellspacing="0">
+<td>
+  <div class="hollowtexts">Wairhaus represents the intersection of urban development and social engagement. Our premier location features a repurposed warehouse nestled in the heart of Kakaako's industrial block. It's purpose is to serve as an open space for those who wish to protest the underdeveloped surrounding via thunderous live performances, professionally choreographed marching, supporting multinational corporate vendors via merchandise consumption, and much more. As the largest urban development site in Honolulu, Kakaako represents a once-in-a lifetime opportunity to transform an older urban core into a much needed and sought after gathering place for all who can afford it. Surrounded by over 4,000 new homes in a market whose supply continues to fall short of demand, and over one million square feet of retail space, making Kakaako the premier outdoor shopping district in Hawai'i and a truly exceptional destination for locals and visitors, there is still much work to be done and we need your help.</div>
+</td>
+<td>
+  <div class="hollowtexts2">STARTING AT <b>12AM, NOVEMBER 8TH, 2017</b> at <b>WAIRHAUS</b> located on <b>111 Coral Street Honolulu, HI 10666</b>, please join us in our protest against poverty as we endeavor to renovate local culture and history as foundations for creating a more extraordinary community. your participation will only cost a small fee of <b>$200 USD</b>. those who chose to offer a generous donation of over $500 USD will automatically be entered in a raffle with the chance to win a weekend staycation in one of Kakaako's newly completed luxury condos with a gorgeous view of all the other newly completed high rises. demonstration posters to be used at the event can be bought at our wairhaus storefront, and each purchase will count as one entry into a seperate raffle with a surprise prize! all procedes will be donated to the local police force's program to exterminate the homeless community infesting the area's many parks and common spaces. with your help, we can truly make a difference for our community.</div>
+</td>
+
+</table></div>
+
+<br><div class="wow fadeInDown" data-wow-delay="3s"><a href="#three"><div class="lastflower">❀</div></a></div></div>
+</center>
+
+
+<div style="height: 1000px;"></div>
+<div id="three"></div>
+<div class="wow fadeInDown" data-wow-delay="2s">
+<div class="headliner">ABOUT US</div><p></div>
+
+<center><div class="wow fadeInDown" data-wow-delay=".8s"><table cellpadding="0" cellspacing="0">
+<td>
+  <div class="hollowtexts">Wairhaus represents the intersection of urban development and social engagement. Our premier location features a repurposed warehouse nestled in the heart of Kakaako's industrial block. It's purpose is to serve as an open space for those who wish to protest the underdeveloped surrounding via thunderous live performances, professionally choreographed marching, supporting multinational corporate vendors via merchandise consumption, and much more. As the largest urban development site in Honolulu, Kakaako represents a once-in-a lifetime opportunity to transform an older urban core into a much needed and sought after gathering place for all who can afford it. Surrounded by over 4,000 new homes in a market whose supply continues to fall short of demand, and over one million square feet of retail space, making Kakaako the premier outdoor shopping district in Hawai'i and a truly exceptional destination for locals and visitors, there is still much work to be done and we need your help.</div>
+</td>
+<td>
+  <div class="hollowtexts2">STARTING AT <b>12AM, NOVEMBER 8TH, 2017</b> at <b>WAIRHAUS</b> located on <b>111 Coral Street Honolulu, HI 10666</b>, please join us in our protest against poverty as we endeavor to renovate local culture and history as foundations for creating a more extraordinary community. your participation will only cost a small fee of <b>$200 USD</b>. those who chose to offer a generous donation of over $500 USD will automatically be entered in a raffle with the chance to win a weekend staycation in one of Kakaako's newly completed luxury condos with a gorgeous view of all the other newly completed high rises. demonstration posters to be used at the event can be bought at our wairhaus storefront, and each purchase will count as one entry into a seperate raffle with a surprise prize! all procedes will be donated to the local police force's program to exterminate the homeless community infesting the area's many parks and common spaces. with your help, we can truly make a difference for our community.</div>
+</td>
+
+</table></div>
+
+<br><div class="wow fadeInDown" data-wow-delay="3s"><a href="#four"><div class="lastflower">❀</div></a></div></div>
+</center>
+
+<div style="height: 1000px;"></div>
+<div id="four"></div>
+<div class="wow fadeInDown" data-wow-delay="2s">
+<div class="headliner">ABOUT US</div><p></div>
+
+<center><div class="wow fadeInDown" data-wow-delay=".8s"><table cellpadding="0" cellspacing="0">
+<td>
+  <div class="hollowtexts">Wairhaus represents the intersection of urban development and social engagement. Our premier location features a repurposed warehouse nestled in the heart of Kakaako's industrial block. It's purpose is to serve as an open space for those who wish to protest the underdeveloped surrounding via thunderous live performances, professionally choreographed marching, supporting multinational corporate vendors via merchandise consumption, and much more. As the largest urban development site in Honolulu, Kakaako represents a once-in-a lifetime opportunity to transform an older urban core into a much needed and sought after gathering place for all who can afford it. Surrounded by over 4,000 new homes in a market whose supply continues to fall short of demand, and over one million square feet of retail space, making Kakaako the premier outdoor shopping district in Hawai'i and a truly exceptional destination for locals and visitors, there is still much work to be done and we need your help.</div>
+</td>
+<td>
+  <div class="hollowtexts2">STARTING AT <b>12AM, NOVEMBER 8TH, 2017</b> at <b>WAIRHAUS</b> located on <b>111 Coral Street Honolulu, HI 10666</b>, please join us in our protest against poverty as we endeavor to renovate local culture and history as foundations for creating a more extraordinary community. your participation will only cost a small fee of <b>$200 USD</b>. those who chose to offer a generous donation of over $500 USD will automatically be entered in a raffle with the chance to win a weekend staycation in one of Kakaako's newly completed luxury condos with a gorgeous view of all the other newly completed high rises. demonstration posters to be used at the event can be bought at our wairhaus storefront, and each purchase will count as one entry into a seperate raffle with a surprise prize! all procedes will be donated to the local police force's program to exterminate the homeless community infesting the area's many parks and common spaces. with your help, we can truly make a difference for our community.</div>
+</td>
+
+</table></div>
+
+<br><div class="wow fadeInDown" data-wow-delay="3s"><a href="#" id="scrollUp"></a></div></div>
+</center>
+
+</body>
+</html>
