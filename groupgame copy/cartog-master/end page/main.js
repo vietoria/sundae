@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-    background (255, 0, 243); 
+    background (140, 224, 255); 
 }
    // const IMAGES = {
 	//title: 'https://i.imgur.com/kaKceHC.png', 
@@ -16,6 +16,7 @@ function setup() {
 
 function draw()  { 
 
+	text('We made this game because millions of people go to the grocery store and buy food without thinking about the sources. Every product has a backstory, and we want to show the systems and potential dangers involved in their creation. There are consequences to your convenience.', 20, 20);
 //get image()
 //{
 //	return 'title'
