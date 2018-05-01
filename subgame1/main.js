@@ -1,9 +1,14 @@
 'use strict';
+var ModalShow = false;
 
 function main() {
 	//showModal('WELCOME', 'test text', 'Okay');
-	if (STATE.resources.milk > 1000) {
-		return showModal('WINNER', 'YAY YOU HAVE ENOUGH MILK!');
+	if (STATE.resources.milk > 100 && !ModalShow) {
+		ModalShow = true;
+		return showModal('WINNER', 'YAY YOU HAVE ENOUGH MILK!',
+			[ new Button('CONTINUE', function() {
+				location.href = "../subgame3/index.html"})]
+				);
 	}
 }
 

@@ -1,0 +1,114 @@
+
+body
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+	font-family: helvetica, arial sans-serif;
+	font-style: bold uppercase;
+	margin: 0px;
+	padding: 10px;
+	z-index: 99;
+	background-color: royalblue;
+    font-size: 15vw; line-height: 99%;
+
+}
+
+
+@media screen and (max-width: 1250px) {
+
+	body{
+	background-color: black;
+
+}
+
+
+
+@media screen and (max-width: 1150px) {
+
+	body{
+	background-color: gray;
+
+	}
+
+	
+}
+
+
+
+@media screen and (max-width: 950px) {
+
+	body{
+	background-color: greenyellow;	
+
+
+	}
+
+	
+	
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+	body{
+	background-color: orangered;	
+
+
+	}
+
+
+	
+}
+
+
+@media screen and (max-width: 750px) {
+
+	body{
+	background-color: #EBD6FF;	
+
+
+	}
+	
+	
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+	body{
+	background-color: #FF9999;
+
+	}
+
+	
+}
+
+
+@media screen and (max-width: 550px) {
+
+	body{
+	background-color: #33CC33;	
+
+	}
+
+	
+	
+}
+
+@media screen and (max-width: 400px) {
+
+	body{
+	background-color: crimson;	
+
+
+	}
+
+
+	
+}
