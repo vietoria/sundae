@@ -31,7 +31,7 @@ const clickable = [];
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 
-  showModal ('Catch the bugs!', 'test', [new Button ('Start',
+  showModal ('Red food dye is derived from Cochineal insects 🐛', 'Catch the bugs to get dye for your cherries and sprinkles!', [new Button ('Start',
     function (){
 STATE.timer = setInterval(function() {
     STATE.time++;
@@ -91,27 +91,32 @@ function draw() {
 
   textSize(32);
   fill(252,220,83);
-  text('catch the bugs!', 10, 30);
+  text('catch the bugs!', 600, 35);
 
 
 
   fill(252,220,83);
   textSize(20);
-  text(`${STATE.time} seconds`, 100, 200);
+  text(`${STATE.time} labor hours`, 650, 60);
 
 STATE.win = STATE.zits==0
 
-  if (STATE.lose) {
+    if (STATE.lose && !STATE.showedModal) {
     clearTimeout (STATE.losetimer)
     clearTimeout (STATE.timer)
-    text('you lose!', 100, 250)
+    STATE.showedModal= true;
+    return showModal ('Whoops 😵', 'No dye for your sundae');
+
   }
 
   if (STATE.win && !STATE.showedModal) {
     clearTimeout (STATE.losetimer)
     clearTimeout (STATE.timer)
     STATE.showedModal = true;
-    return showModal ('Congratulations!', 'You succesfully collected the dye you need for your delicious sundae!');
+    return showModal ('✨Congratulations✨', 'You succesfully collected the dye you need for your delicious sundae! 🍦',
+    [ new Button ('CONTUNUE', function() {
+      location.href = "../subgame3/index.html"})]
+    );
   }
 
   // draw the clickable objects
