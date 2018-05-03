@@ -6,7 +6,7 @@ var collect = false;
 var ModalShow = false;
 
 function preload() {
-  //nut = loadImage ('assets/chocolate.png');
+  nut = loadImage ('https://i.imgur.com/wKctoSU.png');
 }
 
 const STATE = {
@@ -42,7 +42,8 @@ function main() {
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 
-  showModal ('text', 'texts', [new Button ('start')]);
+  showModal ('CHOCOLATE', 'In order to have chocolate, you need to collect enough cacao!', [new Button ('START', function() {})
+    ]);
 
   trash2 = new Trash(50, 220, 1, 380, 0, 0);
   trash3 = new Trash(100, 180, 1, 375, 0, 0);
@@ -127,7 +128,7 @@ function setup() {
 
 // runs every frame
 function draw() {
-  background(75, 158, 114);
+  background(146, 173, 135);
 
   hand.x = mouseX;
   hand.y = mouseY;
@@ -216,90 +217,315 @@ function draw() {
   text(`${STATE.score} 🍫 COLLECTED`, 650, 435);
 
 
-  // if (hand.collided(trash2)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash2)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash3)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
- 
-  // if (hand.collided(trash4)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
+  if (hand.collided(trash3)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // }
+  if (hand.collided(trash4)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash5)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash5)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash6)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash6)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash7)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash7)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash8)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash8)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash9)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash9)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash10)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash10)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash11)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash11)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash12)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash12)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash13)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash13)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash14)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash14)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash15)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash15)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash16)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash16)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash17)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash17)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash18)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash18)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash19)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash19)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash20)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash20)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash21)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash21)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
 
-  // if (hand.collided(trash22)) {
-  //   return showModal('TITLE', 'DESCRIPTION');
-  // }
+  if (hand.collided(trash22)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash23)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash24)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash25)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash26)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash27)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash28)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash30)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash31)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash32)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash42)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash43)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash2)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash44)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash45)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash46)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash47)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash48)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash49)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash50)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash51)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash52)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash53)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash54)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash55)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash56)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash57)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash58)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash59)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash60)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash61)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash62)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash63)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash64)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash65)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash66)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash67)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash68)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash70)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash71)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+  if (hand.collided(trash72)) {
+    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {})
+    ]);
+  }
+
+
+
+///////////
+
 
   if (hand.collided(nut1) && !nut1.deleted) {
     STATE.score += 1;
@@ -351,13 +577,14 @@ function draw() {
     nut10.deleted = true;
   }
 
-  if (STATE.score > 9) {
-    //SHOW END SCREEN
-    //return showModal('TITLE', 'DESCRIPTION');
-    textSize(54);
-    fill(255,255,255);
-    text('YAY UR DONE', 650, 435);
+  if (STATE.score > 9 && !ModalShow) {
+    ModalShow = true;
+    return showModal('WINNER', 'YAY YOU HAVE ENOUGH CHOCOLATE!',
+      [ new Button('CONTINUE', function() {
+        location.href = "../subgame1/index.html"})]
+        );
   }
+
 }
 
 
@@ -438,11 +665,12 @@ class Nut {
     if (!this.deleted) {
     rectMode(CENTER);
     rect(this.x, this.y, this.w, this.h);
+    // image ('wKctoSU.png', this.x, this.y, 100, 100);
     }
   }
 }
 
 function init() {
-  showModal('MWAHAHAHAHA', 'COLLECT CHOCOLATE!!!');
+  
 }
 
