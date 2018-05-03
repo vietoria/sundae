@@ -3,7 +3,7 @@ var ModalShow = false;
 
 function main() {
 	//showModal('WELCOME', 'test text', 'Okay');
-	if (STATE.resources.milk > 100 && !ModalShow) {
+	if (STATE.resources.milk > 1000 && !ModalShow) {
 		ModalShow = true;
 		return showModal('WINNER', 'YAY YOU HAVE ENOUGH MILK!',
 			[ new Button('CONTINUE', function() {
