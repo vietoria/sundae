@@ -15,8 +15,8 @@ function setup() {
 
 
 function draw()  { 
-
-	text('We made this game because millions of people go to the grocery store and buy food without thinking about the sources. Every product has a backstory, and we want to show the systems and potential dangers involved in their creation. There are consequences to your convenience.', 20, 20);
+	textSize(20);
+	text('We made this game because millions of people go to the grocery store and buy food without thinking about the sources. \nEvery product has a backstory, and we want to show the systems and potential dangers involved in their creation. \nThere are consequences to your convenience.', 200, 200);
 //get image()
 //{
 //	return 'title'
