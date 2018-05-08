@@ -9,11 +9,16 @@
 var bug, grass;
 function preload() {
   // // load an image
-  bug = loadImage ('assets/bug.png');
-  grass = loadImage ('assets/grass.jpg')
+  bug = loadImage ('https://i.imgur.com/LHVm6Q3.png');
+  grass = loadImage ('https://i.imgur.com/Vut8xwb.jpg')
 
 
 }
+
+//const IMAGES = {
+  //bug: 'https://i.imgur.com/LHVm6Q3.png',
+  //grass: 'https://i.imgur.com/RfWBuGX.jpg'
+//};
 
 const STATE = {
   time: 0,
@@ -23,6 +28,7 @@ const STATE = {
   losetimer: null
 
 }
+
 
 
 const clickable = [];
@@ -84,6 +90,11 @@ STATE.timer = setInterval(function() {
 
   }
 }
+
+ //get image() {
+   // background('grass');
+  //}
+
 
 // runs every frame
 function draw() {
