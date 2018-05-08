@@ -581,7 +581,7 @@ function draw() {
     ModalShow = true;
     return showModal('WINNER', 'YAY YOU HAVE ENOUGH CHOCOLATE!',
       [ new Button('CONTINUE', function() {
-        location.href = "../subgame1/index.html"})]
+        location.href = "../END/index.html"})]
         );
   }
 
