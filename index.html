@@ -7,6 +7,11 @@
     <title>sundae</title>
     <meta name="description" content="basic example">
     <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
 
 <style type="text/css">
 
@@ -17,32 +22,115 @@ body, html, * {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #e2c5e1;
-    color: #fff;
+    background-color: #e6f8ff;
+    color: #f99fd9;
 }
 
-a {
-    text-decoration: none;
-    color: #e5d8b0;
+
+.header {
+    width: 800px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900; 
+    font-size: 60px; 
+    color:#f99fd9; 
+    position: relative; 
+    top:100px; 
+    z-index:60;  
+    letter-spacing: 15px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-b {
-    text-transform: uppercase;
-    color: #e5d8b0;
+.card {
+    width: 800px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900; 
+    font-size: 20px; 
+    color:#f99fd9; 
+    position: relative; 
+    top:120px; 
+    z-index:60;  
+    letter-spacing: 05px;
+    text-align: center;
+    margin-bottom: 50px;
+
 }
+
 
 </style>
+
+<script src="WOW-master/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+<script src="scrollup-master/dist/lib/jquery-1.11.1.min.js"></script>
+<script src="scrollup-master/dist/jquery.scrollUp.min.js"></script>
+
+<script>
+    $(function () {
+    $.scrollUp({
+        scrollName: 'scrollUp',      // Element ID
+        scrollDistance: 1000,         // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top',           // 'top' or 'bottom'
+        scrollSpeed: 300,            // Speed back to top (ms)
+        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+        animation: 'fade',           // Fade, slide, none
+        animationSpeed: 200,         // Animation speed (ms)
+        scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+        scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+        scrollText: true,            // Text for element, can contain HTML
+        scrollTitle: false,          // Set a custom <a> title if required.
+        scrollImg: false,            // Set true to use image
+        activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647           // Z-Index for the overlay
+    });
+});
+</script>
 
 
 </head>
 <body>
 
 <center>
-<div style="height:70px"></div>
-<img src="https://i.imgur.com/ZPRINDU.png" width=600px><br>
-<img src="https://i.imgur.com/ThEvmG9.png" width=400px><br><br>
-<a href="subgame1/index.html" target="blank">
-<img src="https://i.imgur.com/bjhfcJg.png" width=600px></div>
+
+<center><div class="header"><div class="animated fadeInDown">ICE CREAM SHOPPE</div></div><p></center>
+
+<center><div class="card">Click an Ingredient Below to Create Your Own Sundae</div><p></center>
+
+<div style="padding: 200px;"><a href="subgame1/index.html" target="blank">
+<img src="https://i.imgur.com/bjhfcJg.png" width=600px></a></div>
 
 </center>
 
