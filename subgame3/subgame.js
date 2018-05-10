@@ -35,6 +35,7 @@ function main() {
       [ new Button('CONTINUE', function() {
         location.href = "../END/index.html"})]
         );
+
   }
 }
 
@@ -218,368 +219,490 @@ function draw() {
 
 
   if (hand.collided(trash2)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+    //[ new Button('TRY AGAIN', function() {
+        //location.href = "index.html"})], 
+        [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash3)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash4)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash5)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash6)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash7)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash8)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash9)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash10)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash11)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash12)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash13)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash14)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash15)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash16)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash17)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash18)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash19)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash20)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash21)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash22)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash23)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash24)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash25)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash26)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash27)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash28)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash30)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash31)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('CONTINUE', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('CONTINUE', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash32)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash42)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash43)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('CONTINUE', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('CONTINUE', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash2)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash44)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash45)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash46)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash47)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash48)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})],
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash49)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash50)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash51)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash52)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash53)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash54)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash55)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})],
+         [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash56)) {
-    return showModal ('YOU LOSE', 'Do better', [new Button ('TRY AGAIN', function() {
-        location.href= "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [new Button ('TRY AGAIN', function() {
+      //   location.href= "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash57)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash58)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash59)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash60)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash61)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash62)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better',
+     // [ new Button('TRY AGAIN', function() {
+     //    location.href = "index.html"})], 
+     [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash63)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash64)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash65)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash66)) {
-    return showModal ('YOU LOSE', 'Do better',  [new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better',  
+      // [new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash67)) {
-    return showModal ('YOU LOSE', 'Do better',  [new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better',  
+      // [new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash68)) {
-    return showModal ('YOU LOSE', 'Do better',  [new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better',  
+      // [new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash70)) {
-    return showModal ('YOU LOSE', 'Do better',  [new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better',  
+      // [new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash71)) {
-    return showModal ('YOU LOSE', 'Do better',  [new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better',  
+      // [new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
   if (hand.collided(trash72)) {
-    return showModal ('YOU LOSE', 'Do better', [ new Button('TRY AGAIN', function() {
-        location.href = "index.html"})], [ new Button('GIVE UP', function() {
+    return showModal ('YOU LOSE', 'Do better', 
+      // [ new Button('TRY AGAIN', function() {
+      //   location.href = "index.html"})], 
+      [ new Button('GIVE UP', function() {
         location.href = "../END/index.html"})]);
   }
 
@@ -642,7 +765,7 @@ function draw() {
     ModalShow = true;
     return showModal('WINNER', 'YAY YOU HAVE ENOUGH CHOCOLATE!',
       [ new Button('CONTINUE', function() {
-        location.href = "../subgame1/index.html"})]
+        location.href = "../END/index.html"})]
         );
   }
 
