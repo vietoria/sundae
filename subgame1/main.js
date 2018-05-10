@@ -7,7 +7,7 @@ function main() {
 		ModalShow = true;
 		return showModal('WINNER', 'YAY YOU HAVE ENOUGH MILK!',
 			[ new Button('CONTINUE', function() {
-				location.href = "../subgame2/index.html"})]
+				location.href = "../subgame3/index.html"})]
 				);
 	}
 }
